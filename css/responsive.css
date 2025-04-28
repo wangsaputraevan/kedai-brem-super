@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .nav-link {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        visibility: hidden;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(195, 134, 35);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transition: all 1s ease;
+    }
+
+    .nav-link a {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    #menu-toggle:checked ~ .nav-link {
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+    }
+}
