@@ -11,7 +11,7 @@ const listImage = [
 let currentIndex = 0;
 let isImg1Active = true;
 
-function gantiGbr() {
+function changeHeroImage() {
     const nextIndex = (currentIndex + 1) % listImage.length;
     const nextImage = listImage[nextIndex];
 
@@ -29,4 +29,4 @@ function gantiGbr() {
     currentIndex = nextIndex;
 }
 
-setInterval(gantiGbr, 3000);
+setInterval(changeHeroImage, 3000);
