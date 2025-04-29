@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+    /* NAVIGATION */
     .hamburger-icon {
         display: block;
     }
@@ -14,15 +15,16 @@
         width: 100%;
         background-color: rgb(195, 134, 35);
         position: absolute;
-        top: 80px;
+        top: 65px;
         left: 0;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
     }
 
     .nav-link a {
         width: 100%;
         text-align: center;
         border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 15px 0;
     }
 
     #menu-toggle:checked ~ .nav-link {
@@ -37,5 +39,93 @@
         flex-wrap: wrap;
         height: auto;
         align-items: center;
+        padding: 0 10px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    /* HERO SECTION */
+    #hero {
+        padding: 1rem;
+        height: auto;
+    }
+
+    #hero .hero-container .hero-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #hero .hero-container .hero-content .hero-img-wrapper {
+        width: 250px;
+        height: 250px;
+        padding-left: 0;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #hero p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* INTRODUCTION SECTION */
+    #introduction {
+        padding: 20px;
+    }
+
+    #introduction .introduction-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #introduction .introduction-container img {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #introduction .description {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    /* PRODUCT PREVIEW */
+    #product-preview {
+        padding: 20px;
+    }
+
+    #product-preview .scroll-wrapper {
+        flex-direction: column;
+    }
+
+    #product-preview .scroll-wrapper .scroll-btn {
+        display: none; /* sembunyikan tombol di mobile */
+    }
+
+    #product-preview .scroll-wrapper .container {
+        margin: 0;
+        gap: 10px;
+    }
+
+    #product-preview .scroll-wrapper .container .img-box {
+        width: 90vw;
+    }
+
+    /* FOOTER */
+    footer .media-social-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
     }
 }

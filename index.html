@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bs.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <header>
         <div class="navigation">
-            <div class="logo">
+            <div class="logo" onclick="document.documentElement.scrollTop = 0;">
                 <img src="favicon.png" class="comp-logo" alt="company-logo">
                 <img src="src/text-logo.png" class="text-logo" alt="text-logo">
             </div>
@@ -28,10 +29,10 @@
             <label for="menu-toggle" class="hamburger-icon">&#9776;</label>
 
             <div class="nav-link">
-                <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-                <a href="#"><i class="fa fa-external-link-square"></i> Product</a>
-                <a href="#"><i class="fa fa-users"></i> About Us</a>
-                <a href="#"><i class="fa fa-envelope"></i> Contact</a>
+                <a href="#top"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="#product-preview"><i class="fa fa-external-link-square"></i> Product</a>
+                <a href="#shopping"><i class="fa fa-shopping-cart"></i> Shopping</a>
+                <a href="#contact-us"><i class="fa fa-envelope"></i> Contact</a>
             </div>
         </div>
     </header>
@@ -42,134 +43,196 @@
             </div>
             <div class="snowflake" style="left: 7%; width: 4px; height: 4px; animation-duration: 5.2s, 3.3s, 1.9s;">
             </div>
-            <div class="snowflake"
-                style="left: 12%; width: 6px; height: 6px; animation-duration: 7.1s, 3.7s, 2.4s;"></div>
-            <div class="snowflake"
-                style="left: 18%; width: 3px; height: 3px; animation-duration: 4.4s, 2.9s, 1.7s;"></div>
+            <div class="snowflake" style="left: 12%; width: 6px; height: 6px; animation-duration: 7.1s, 3.7s, 2.4s;">
+            </div>
+            <div class="snowflake" style="left: 18%; width: 3px; height: 3px; animation-duration: 4.4s, 2.9s, 1.7s;">
+            </div>
             <div class="snowflake" style="left: 22%; width: 7px; height: 7px; animation-duration: 6.8s, 4s, 2.6s;">
             </div>
             <div class="snowflake" style="left: 27%; width: 5px; height: 5px; animation-duration: 5.5s, 2.6s, 2s;">
             </div>
-            <div class="snowflake"
-                style="left: 31%; width: 3px; height: 3px; animation-duration: 4.8s, 3.1s, 2.1s;"></div>
-            <div class="snowflake"
-                style="left: 36%; width: 6px; height: 6px; animation-duration: 7.4s, 3.5s, 2.3s;"></div>
+            <div class="snowflake" style="left: 31%; width: 3px; height: 3px; animation-duration: 4.8s, 3.1s, 2.1s;">
+            </div>
+            <div class="snowflake" style="left: 36%; width: 6px; height: 6px; animation-duration: 7.4s, 3.5s, 2.3s;">
+            </div>
             <div class="snowflake" style="left: 41%; width: 4px; height: 4px; animation-duration: 5.9s, 3s, 1.8s;">
             </div>
-            <div class="snowflake"
-                style="left: 45%; width: 8px; height: 8px; animation-duration: 6.2s, 3.8s, 2.5s;"></div>
-            <div class="snowflake"
-                style="left: 49%; width: 3px; height: 3px; animation-duration: 4.1s, 2.5s, 1.5s;"></div>
-            <div class="snowflake"
-                style="left: 52%; width: 5px; height: 5px; animation-duration: 6.6s, 3.6s, 2.2s;"></div>
-            <div class="snowflake"
-                style="left: 57%; width: 4px; height: 4px; animation-duration: 5.3s, 2.8s, 1.9s;"></div>
-            <div class="snowflake"
-                style="left: 61%; width: 6px; height: 6px; animation-duration: 7.5s, 4.1s, 2.6s;"></div>
-            <div class="snowflake"
-                style="left: 66%; width: 3px; height: 3px; animation-duration: 4.2s, 2.6s, 1.6s;"></div>
-            <div class="snowflake"
-                style="left: 71%; width: 7px; height: 7px; animation-duration: 6.9s, 3.9s, 2.4s;"></div>
+            <div class="snowflake" style="left: 45%; width: 8px; height: 8px; animation-duration: 6.2s, 3.8s, 2.5s;">
+            </div>
+            <div class="snowflake" style="left: 49%; width: 3px; height: 3px; animation-duration: 4.1s, 2.5s, 1.5s;">
+            </div>
+            <div class="snowflake" style="left: 52%; width: 5px; height: 5px; animation-duration: 6.6s, 3.6s, 2.2s;">
+            </div>
+            <div class="snowflake" style="left: 57%; width: 4px; height: 4px; animation-duration: 5.3s, 2.8s, 1.9s;">
+            </div>
+            <div class="snowflake" style="left: 61%; width: 6px; height: 6px; animation-duration: 7.5s, 4.1s, 2.6s;">
+            </div>
+            <div class="snowflake" style="left: 66%; width: 3px; height: 3px; animation-duration: 4.2s, 2.6s, 1.6s;">
+            </div>
+            <div class="snowflake" style="left: 71%; width: 7px; height: 7px; animation-duration: 6.9s, 3.9s, 2.4s;">
+            </div>
             <div class="snowflake" style="left: 75%; width: 5px; height: 5px; animation-duration: 5.6s, 3.3s, 2s;">
             </div>
-            <div class="snowflake"
-                style="left: 78%; width: 3px; height: 3px; animation-duration: 4.3s, 2.7s, 1.7s;"></div>
-            <div class="snowflake"
-                style="left: 82%; width: 6px; height: 6px; animation-duration: 7.3s, 3.6s, 2.3s;"></div>
-            <div class="snowflake"
-                style="left: 86%; width: 4px; height: 4px; animation-duration: 5.7s, 3.2s, 1.9s;"></div>
-            <div class="snowflake"
-                style="left: 89%; width: 8px; height: 8px; animation-duration: 6.1s, 3.7s, 2.5s;"></div>
+            <div class="snowflake" style="left: 78%; width: 3px; height: 3px; animation-duration: 4.3s, 2.7s, 1.7s;">
+            </div>
+            <div class="snowflake" style="left: 82%; width: 6px; height: 6px; animation-duration: 7.3s, 3.6s, 2.3s;">
+            </div>
+            <div class="snowflake" style="left: 86%; width: 4px; height: 4px; animation-duration: 5.7s, 3.2s, 1.9s;">
+            </div>
+            <div class="snowflake" style="left: 89%; width: 8px; height: 8px; animation-duration: 6.1s, 3.7s, 2.5s;">
+            </div>
             <div class="snowflake" style="left: 93%; width: 3px; height: 3px; animation-duration: 4s, 2.4s, 1.5s;">
             </div>
-            <div class="snowflake"
-                style="left: 97%; width: 5px; height: 5px; animation-duration: 6.7s, 3.4s, 2.1s;"></div>
+            <div class="snowflake" style="left: 97%; width: 5px; height: 5px; animation-duration: 6.7s, 3.4s, 2.1s;">
+            </div>
             <div class="snowflake" style="left: 2%; width: 6px; height: 6px; animation-duration: 7.6s, 4.2s, 2.7s;">
             </div>
             <div class="snowflake" style="left: 6%; width: 4px; height: 4px; animation-duration: 5.4s, 3s, 1.8s;">
             </div>
-            <div class="snowflake"
-                style="left: 10%; width: 7px; height: 7px; animation-duration: 6.3s, 3.9s, 2.4s;"></div>
-            <div class="snowflake"
-                style="left: 14%; width: 3px; height: 3px; animation-duration: 4.5s, 2.7s, 1.6s;"></div>
+            <div class="snowflake" style="left: 10%; width: 7px; height: 7px; animation-duration: 6.3s, 3.9s, 2.4s;">
+            </div>
+            <div class="snowflake" style="left: 14%; width: 3px; height: 3px; animation-duration: 4.5s, 2.7s, 1.6s;">
+            </div>
             <div class="snowflake" style="left: 19%; width: 5px; height: 5px; animation-duration: 5.8s, 3.1s, 2s;">
             </div>
-            <div class="snowflake"
-                style="left: 23%; width: 6px; height: 6px; animation-duration: 7.2s, 3.8s, 2.5s;"></div>
+            <div class="snowflake" style="left: 23%; width: 6px; height: 6px; animation-duration: 7.2s, 3.8s, 2.5s;">
+            </div>
             <div class="snowflake" style="left: 28%; width: 4px; height: 4px; animation-duration: 5s, 2.9s, 1.8s;">
             </div>
-            <div class="snowflake"
-                style="left: 33%; width: 8px; height: 8px; animation-duration: 6.5s, 3.6s, 2.3s;"></div>
-            <div class="snowflake"
-                style="left: 37%; width: 3px; height: 3px; animation-duration: 4.6s, 2.5s, 1.6s;"></div>
+            <div class="snowflake" style="left: 33%; width: 8px; height: 8px; animation-duration: 6.5s, 3.6s, 2.3s;">
+            </div>
+            <div class="snowflake" style="left: 37%; width: 3px; height: 3px; animation-duration: 4.6s, 2.5s, 1.6s;">
+            </div>
             <div class="snowflake" style="left: 42%; width: 6px; height: 6px; animation-duration: 7s, 3.7s, 2.2s;">
             </div>
             <div class="snowflake" style="left: 47%; width: 5px; height: 5px; animation-duration: 5.1s, 3.2s, 2s;">
             </div>
-            <div class="snowflake"
-                style="left: 51%; width: 3px; height: 3px; animation-duration: 4.7s, 2.6s, 1.7s;"></div>
-            <div class="snowflake"
-                style="left: 56%; width: 6px; height: 6px; animation-duration: 7.7s, 3.5s, 2.4s;"></div>
+            <div class="snowflake" style="left: 51%; width: 3px; height: 3px; animation-duration: 4.7s, 2.6s, 1.7s;">
+            </div>
+            <div class="snowflake" style="left: 56%; width: 6px; height: 6px; animation-duration: 7.7s, 3.5s, 2.4s;">
+            </div>
             <div class="snowflake" style="left: 60%; width: 4px; height: 4px; animation-duration: 5.6s, 3s, 1.9s;">
             </div>
-            <div class="snowflake"
-                style="left: 64%; width: 7px; height: 7px; animation-duration: 6.4s, 3.3s, 2.3s;"></div>
-            <div class="snowflake"
-                style="left: 68%; width: 3px; height: 3px; animation-duration: 4.3s, 2.4s, 1.5s;"></div>
+            <div class="snowflake" style="left: 64%; width: 7px; height: 7px; animation-duration: 6.4s, 3.3s, 2.3s;">
+            </div>
+            <div class="snowflake" style="left: 68%; width: 3px; height: 3px; animation-duration: 4.3s, 2.4s, 1.5s;">
+            </div>
             <div class="snowflake" style="left: 73%; width: 5px; height: 5px; animation-duration: 6.6s, 3.6s, 2s;">
             </div>
             <div class="snowflake" style="left: 77%; width: 6px; height: 6px; animation-duration: 7.8s, 4s, 2.6s;">
             </div>
-            <div class="snowflake"
-                style="left: 81%; width: 4px; height: 4px; animation-duration: 5.5s, 3.1s, 1.8s;"></div>
-            <div class="snowflake"
-                style="left: 85%; width: 8px; height: 8px; animation-duration: 6.3s, 3.7s, 2.5s;"></div>
-            <div class="snowflake"
-                style="left: 90%; width: 3px; height: 3px; animation-duration: 4.2s, 2.3s, 1.6s;"></div>
-            <div class="snowflake"
-                style="left: 94%; width: 6px; height: 6px; animation-duration: 7.1s, 3.4s, 2.2s;"></div>
-            <div class="snowflake"
-                style="left: 98%; width: 5px; height: 5px; animation-duration: 5.9s, 3.5s, 2.1s;"></div>
+            <div class="snowflake" style="left: 81%; width: 4px; height: 4px; animation-duration: 5.5s, 3.1s, 1.8s;">
+            </div>
+            <div class="snowflake" style="left: 85%; width: 8px; height: 8px; animation-duration: 6.3s, 3.7s, 2.5s;">
+            </div>
+            <div class="snowflake" style="left: 90%; width: 3px; height: 3px; animation-duration: 4.2s, 2.3s, 1.6s;">
+            </div>
+            <div class="snowflake" style="left: 94%; width: 6px; height: 6px; animation-duration: 7.1s, 3.4s, 2.2s;">
+            </div>
+            <div class="snowflake" style="left: 98%; width: 5px; height: 5px; animation-duration: 5.9s, 3.5s, 2.1s;">
+            </div>
         </div>
 
         <div class="hero-container">
             <div class="hero-content">
-                <div>
-                    <h1>Selamat Datang di Situs Kami</h1>
+                <div class="hero-title-container">
+                    <h1>KEDAI BREM SUPER</h1>
+                    <p>Nikmati citarasa unik dari makanan tradisional khas Madiun.</p>
                     <div class="btn-container">
                         <a href="#introduction">Selengkapnya</a>
+                        <a class="buy-btn" href="#">Beli Sekarang!</a>
                     </div>
                 </div>
-                <img src="src/hero-product/3.png">
+                <div class="hero-img-wrapper">
+                    <img class="current" src="src/hero-product/3.png" alt="current">
+                    <img class="next" src="src/hero-product/3.png" alt="next">
+                </div>
             </div>
         </div>
     </section>
 
     <section id="introduction">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore sunt non, repellendus corrupti
-        vitae ea alias. Sequi expedita debitis, facere ullam ipsa a minima temporibus laborum laudantium adipisci
-        aspernatur.
-        Quibusdam error dolorum numquam voluptas optio asperiores adipisci atque velit consequuntur. Asperiores,
-        possimus fugiat esse saepe officia labore, corporis accusantium tempora perspiciatis nulla suscipit aperiam iste
-        iure molestias expedita unde?
-        Asperiores repellat pariatur qui neque assumenda voluptates repellendus nemo dolor facilis exercitationem error
-        eius ea rem voluptate distinctio quidem, quam deleniti sit laboriosam nulla iste? Quidem nostrum quam est
-        laudantium?
-        Accusantium, cumque. Totam omnis ab qui facilis quisquam, velit placeat ipsum commodi eligendi hic corrupti
-        molestias ut beatae, suscipit atque quam maxime odio quos recusandae architecto quod excepturi sit est!
-        Veniam itaque repudiandae sequi recusandae, placeat aliquam eum ducimus illum quod tempora modi doloribus
-        aspernatur et autem porro delectus eveniet aut vitae! Fuga alias sit ratione similique aliquid quam earum!
-        Ut at, perspiciatis enim esse ex explicabo natus! Rem similique minus velit architecto, suscipit expedita error
-        eos doloremque iste, incidunt, aperiam mollitia tenetur consectetur ex obcaecati a impedit tempora.
-        Consequuntur?
-        Alias obcaecati non vero corporis quibusdam in, impedit incidunt. Eligendi itaque eaque cumque magnam odio
-        necessitatibus optio accusantium, esse enim ut quisquam ad explicabo, ratione corrupti labore. Fugiat, tempore
-        voluptas.
-        Facere non aspernatur at velit ipsum quibusdam culpa numquam. Possimus illum fugiat ut inventore consequuntur
-        cum iure, itaque quis natus aspernatur vitae saepe. Voluptates, ab rerum doloremque totam enim impedit!
+        <div class="introduction-container">
+            <div>
+                <img src="src/introduction-img.png">
+            </div>
+            <div>
+                <div class="intro-title">
+                    <div class="title">Selamat Datang</div>
+                    <div class="subtitle">Di situs resmi Kedai Brem Super!</div>
+                </div>
+                <div class="description">
+                    Kedai Brem Super merupakan salah satu toko brem terbesar di Indonesia. Brem khas Madiun adalah
+                    makanan tradisional berbentuk lempengan padat berwarna putih kekuningan yang dihasilkan dari proses
+                    fermentasi sari tape ketan. Memiliki rasa unik yang perpaduan antara manis, asam, dan sedikit sepat,
+                    brem ini memberikan sensasi sejuk di mulut saat dikonsumsi. Selain menjadi oleh-oleh khas, brem
+                    Madiun juga mencerminkan kekayaan budaya dan keterampilan lokal dalam mengolah hasil pertanian
+                    menjadi produk pangan bernilai tinggi. Teksturnya yang lembut dan mudah larut di lidah membuat brem
+                    ini digemari berbagai kalangan, baik sebagai camilan maupun sebagai pelengkap dalam berbagai acara
+                    tradisional. Kami menyediakan berbagai macam varian rasa untuk produk-produk brem yang tentunya
+                    unik!
+                </div>
+                <a class="link-btn" href="#">Tentang Kami</a>
+            </div>
+        </div>
     </section>
 
-    <script src="script.js"></script>
+    <section id="product-preview">
+        <div class="title">Gambar Produk</div>
+        <div class="scroll-wrapper">
+            <div class="scroll-btn left" onclick="document.querySelector('.container').scrollBy({left: -50, behavior: 'smooth'}); return false;">&#10094;</div>
+
+            <div class="container">
+                <img src="src/product-preview/1.jpg">
+                <img src="src/product-preview/2.jpg">
+                <img src="src/product-preview/3.jpg">
+                <img src="src/product-preview/4.jpg">
+                <img src="src/product-preview/5.jpg">
+                <img src="src/product-preview/6.jpg">
+            </div>
+
+            <div class="scroll-btn right" onclick="document.querySelector('.container').scrollBy({left: 50, behavior: 'smooth'}); return false;">&#10095;</div>
+        </div>
+    </section>
+
+    <section id="shopping">
+        <div><strong>besok ajalah yg section ini, males</strong></div>
+    </section>
+
+    <section id="contact-us">
+        <div class="title">Hubungi Kami</div>
+        <div class="description">Punya pertanyaan seputar produk kami, ingin memesan dalam jumlah besar, memberikan saran, atau sekadar ingin tahu lebih lanjut tentang brem khas Madiun? Jangan ragu untuk menghubungi kami! Tim Kedai Brem Super selalu siap membantu Anda dengan ramah dan cepat. Baik itu informasi mengenai varian rasa, cara pemesanan, pengiriman, hingga kerja sama atau kolaborasi, kami senang bisa mendengar langsung dari Anda. Silakan gunakan formulir surel, media sosial, atau nomor yang tersedia! Kami akan berusaha merespons secepat mungkin demi kenyamanan dan kepuasan Anda.</div>
+        <div class="email-container">
+            <form id="email-form">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" required>
+        
+                <label for="subject">Alamat Surel (Email):</label>
+                <input type="email" id="email" required>
+
+                <label for="subject">Subjek (Judul):</label>
+                <input type="text" id="subject" required>
+        
+                <label for="message">Pesan atau pertanyaan:</label>
+                <textarea id="message" required></textarea>
+        
+                <button type="button" class="send-btn">Kirim Surel</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Kedai Brem Super 2025</p>
+        <div class="media-social-container">
+            <a href="https://web.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.whatsapp.com/" class="fa fa-whatsapp"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/sendEmail.js"></script>
 </body>
 
 </html>

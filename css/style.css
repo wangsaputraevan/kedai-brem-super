@@ -1,6 +1,9 @@
+/* GENERAL */
+
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     height: 100%;
+    scroll-padding-top: 65px;
     box-sizing: border-box;
 }
 
@@ -11,7 +14,29 @@ body {
     font-family: 'Raleway';
 }
 
-.navigation {
+.title {
+    font-size: 45px;
+    font-family: 'Raleway Bold';
+    font-weight: bolder;
+}
+
+.subtitle {
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: 'Raleway Bold';
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+/* END OF GENERAL */
+
+/* HEADER SECTION */
+
+header .navigation {
     position: fixed;
     background-image: linear-gradient(90deg, rgb(228, 166, 42), rgb(195, 134, 35));
     width: 100%;
@@ -22,26 +47,27 @@ body {
     z-index: 10;
 }
 
-.navigation .logo {
+header .navigation .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navigation .text-logo {height: 40px;}
-.navigation .comp-logo {
+header .navigation .logo:hover {cursor: pointer}
+header .navigation .text-logo {height: 40px;}
+header .navigation .comp-logo {
     width: 60px;
     padding: 10px;
 }
 
-.navigation .nav-link {
+header .navigation .nav-link {
     padding-right: 20px;
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
-.navigation .nav-link a {
+header .navigation .nav-link a {
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -50,8 +76,8 @@ body {
     transition: .2s ease-in-out;
 }
 
-#menu-toggle {display: none;}
-.navigation .nav-link a:hover {
+header .navigation #menu-toggle {display: none;}
+header .navigation .nav-link a:hover {
     color: #356d13;
     padding: 10px 30px;
     background-color: white;
@@ -59,7 +85,7 @@ body {
     font-family: 'Raleway Bold';
 }
 
-.hamburger-icon {
+header .navigation .hamburger-icon {
     display: none;
     font-size: 26px;
     color: white;
@@ -67,6 +93,10 @@ body {
     padding: 10px;
     user-select: none;
 }
+
+/* END OF HEADER SECTION */
+
+/* HERO SECTION */
 
 #hero {
     height: 90vh;
@@ -85,12 +115,23 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     animation: backgroundFade 20s ease-in-out infinite alternate;
+}
 
+#hero p {
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1.5s;
 }
 
 #hero h1 {
     font-size: 3em;
-    margin-bottom: 0.5em;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0;
+    margin-top: 75px;
     opacity: 0;
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 1s;
@@ -102,35 +143,69 @@ body {
     align-items: center;
 }
 
-#hero .hero-container .hero-content img {
-    scale: 80%;
+#hero .hero-container .hero-content .hero-img-wrapper {
+    padding-left: 30px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+#hero .hero-container .hero-content .hero-img-wrapper img {
+    padding-left: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 1s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hero .hero-container .hero-content .hero-img-wrapper img.active {
+    opacity: 1;
+    z-index: 2;
 }
 
 #hero .hero-container .hero-content .btn-container {
+    padding: 30px 0;
     display: flex;
+    gap: 0px;
 }
 
 #hero .hero-container .hero-content .btn-container a {
-    background-color: orange;
+    scale: 90%;
     font-size: 20px;
     font-weight: bolder;
     display: inline-block;
-    padding: 10px 20px;
-    color: white;
+    padding: 15px 23px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     opacity: 0;
-    animation: fadeIn 3s ease-out forwards;
+    animation: fadeIn 2s ease-out forwards;
     transition: .5s ease;
-}
-
-#hero .hero-container .hero-content .btn-container a:hover {
-    background-color: white;
+    animation-delay: 2s;
+    outline: 2px solid black;
+    background-color: orange;
     color: black;
 }
 
-.snow-container {
+#hero .hero-container .hero-content .btn-container a:hover {
+    background-color: transparent;
+    outline: 2px solid orange;
+    color: orange;
+    scale: 95%;
+}
+
+#hero .hero-container .hero-content .btn-container .buy-btn {background-color: white;}
+#hero .hero-container .hero-content .btn-container .buy-btn:hover {
+    outline: 2px solid white;
+    color: white;
+}
+
+#hero .snow-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -141,7 +216,7 @@ body {
     z-index: 1;
 }
 
-.snowflake {
+#hero .snow-container .snowflake {
     position: absolute;
     top: -10px;
     background: white;
@@ -152,6 +227,259 @@ body {
     animation-iteration-count: infinite;
     animation-direction: normal, alternate, alternate;
 }
+
+/* END OF HERO SECTION */
+
+/* INTRODUCTION SECTION */
+
+#introduction {
+    padding: 30px 40px;
+}
+
+#introduction .introduction-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#introduction .introduction-container:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#introduction .introduction-container img {
+    width: 550px;
+    height: auto;
+    padding-right: 50px;
+}
+
+#introduction .introduction-container div .description {
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+#introduction .introduction-container div .link-btn {
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .5s ease;
+    animation-delay: 2s;
+    outline: 2px solid black;
+    background-color: orange;
+    color: black;
+}
+
+#introduction .introduction-container div .link-btn:hover {
+    outline: 2px solid black;
+    background-color: white;
+}
+
+/* END OF INTRODUCTION SECTION */
+
+/* PRODUCT PRODUCT PREVIEW SECTION */
+
+#product-preview {
+    background-color: rgb(87, 44, 0);
+    padding: 30px 40px;
+}
+
+#product-preview .title {
+    color: white;
+    text-align: center;
+}
+
+#product-preview .scroll-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#product-preview .scroll-wrapper .container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
+    margin: 0 40px;
+}
+
+#product-preview .scroll-wrapper .container img {
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+#product-preview .scroll-wrapper .scroll-btn {
+    position: absolute;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 24px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+#product-preview .scroll-wrapper .scroll-btn.left {left: 0;}
+#product-preview .scroll-wrapper .scroll-btn.right {right: 0;}
+#product-preview .scroll-wrapper .container::-webkit-scrollbar {height: 8px;}
+#product-preview .scroll-wrapper .container::-webkit-scrollbar-thumb:hover {background: #555;}
+#product-preview .scroll-wrapper .scroll-btn:hover {
+    color: orange;
+    cursor: pointer;
+}
+#product-preview .scroll-wrapper .container::-webkit-scrollbar-thumb {
+    background: #88888851;
+    border-radius: 4px;
+}
+    
+/* END OF PRODUCT PREVIEW SECTION */
+
+/* */
+/* */
+
+/* CONTACT US SECTION */
+
+#contact-us {
+    background-color: rgb(87, 44, 0);
+    padding: 30px 40px;
+}
+
+#contact-us .title {
+    text-align: center;
+    color: white;
+}
+
+#contact-us .description {
+    padding: 20px 150px;
+    padding-bottom: 0;
+    line-height: 1.4;
+    color: white;
+    text-align: justify;
+}
+
+#contact-us .email-container #email-form {
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us .email-container #email-form label {
+    display: block;  
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#contact-us .email-container #email-form input[type="text"], #contact-us .email-container #email-form input[type="email"] {
+    font-family: 'Raleway';
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px; 
+    box-sizing: border-box; 
+}
+
+#contact-us .email-container #email-form input:focus, #contact-us .email-container #email-form textarea:focus {border: 2px solid orange;}
+#contact-us .email-container #email-form textarea {
+    outline: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px; 
+    box-sizing: border-box; 
+    font-family: 'Raleway';
+}
+
+#contact-us .email-container #email-form .send-btn {
+    background-color: orange;
+    border: 2px solid black;
+    width: 100%;
+    height: 40px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#contact-us .email-container #email-form .send-btn:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* END OF CONTACT US SECTION */
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .media-social-container {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer .fa-facebook {background-color: #3B5998;}
+footer .fa-whatsapp {background-color: #00c92b;}
+footer .fa-twitter {background-color: #0cabdb}
+footer .fa-instagram {
+    background-image: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+footer .fa {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: x-large;
+    color: white;
+    border-radius: 20px;
+    transition: all .2s;
+    scale: 80%;
+}
+
+footer .fa:hover {
+    scale: 90%;
+    transform: translateY(-5px);
+}
+
+/* END OF FOOTER SECTION */
+
+/* ANIMATION */
 
 @keyframes fadeIn {
     to {
@@ -188,6 +516,10 @@ body {
         opacity: 0.3;
     }
 }
+
+/* END OF ANIMATION */
+
+/* IMPORT */
 
 @font-face {
     font-family: 'Raleway';
