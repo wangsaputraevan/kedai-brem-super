@@ -32,6 +32,53 @@ body {
     background-color: white;
 }
 
+#ad-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+
+    animation: popup-scale 0.4s ease forwards;
+    animation-delay: 5s;
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ad-popup .popup-content img {
+    width: 300px;
+    height: auto;
+}
+
+#ad-popup .square {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.457);
+}
+
 /* END OF GENERAL */
 
 /* HEADER SECTION */
@@ -53,8 +100,14 @@ header .navigation .logo {
     align-items: center;
 }
 
-header .navigation .logo:hover {cursor: pointer}
-header .navigation .text-logo {height: 40px;}
+header .navigation .logo:hover {
+    cursor: pointer
+}
+
+header .navigation .text-logo {
+    height: 40px;
+}
+
 header .navigation .comp-logo {
     width: 60px;
     padding: 10px;
@@ -76,7 +129,10 @@ header .navigation .nav-link a {
     transition: .2s ease-in-out;
 }
 
-header .navigation #menu-toggle {display: none;}
+header .navigation #menu-toggle {
+    display: none;
+}
+
 header .navigation .nav-link a:hover {
     color: #356d13;
     padding: 10px 30px;
@@ -199,7 +255,10 @@ header .navigation .hamburger-icon {
     scale: 95%;
 }
 
-#hero .hero-container .hero-content .btn-container .buy-btn {background-color: white;}
+#hero .hero-container .hero-content .btn-container .buy-btn {
+    background-color: white;
+}
+
 #hero .hero-container .hero-content .btn-container .buy-btn:hover {
     outline: 2px solid white;
     color: white;
@@ -331,25 +390,44 @@ header .navigation .hamburger-icon {
     transition: .3s;
 }
 
-#product-preview .scroll-wrapper .scroll-btn.left {left: 0;}
-#product-preview .scroll-wrapper .scroll-btn.right {right: 0;}
-#product-preview .scroll-wrapper .container::-webkit-scrollbar {height: 8px;}
-#product-preview .scroll-wrapper .container::-webkit-scrollbar-thumb:hover {background: #555;}
+#product-preview .scroll-wrapper .scroll-btn.left {
+    left: 0;
+}
+
+#product-preview .scroll-wrapper .scroll-btn.right {
+    right: 0;
+}
+
+#product-preview .scroll-wrapper .container::-webkit-scrollbar {
+    height: 8px;
+}
+
+#product-preview .scroll-wrapper .container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 #product-preview .scroll-wrapper .scroll-btn:hover {
     color: orange;
     cursor: pointer;
 }
+
 #product-preview .scroll-wrapper .container::-webkit-scrollbar-thumb {
     background: #88888851;
     border-radius: 4px;
 }
-    
+
 /* END OF PRODUCT PREVIEW SECTION */
 
 /* SHOPPING SECTION */
 
-#shopping {padding: 30px 40px;}
-#shopping .title {text-align: center;}
+#shopping {
+    padding: 30px 40px;
+}
+
+#shopping .title {
+    text-align: center;
+}
+
 #shopping .description {
     padding: 20px 150px;
     padding-bottom: 0;
@@ -358,7 +436,9 @@ header .navigation .hamburger-icon {
     text-align: justify;
 }
 
-#shopping .description:nth-child(3) {text-align: center;}
+#shopping .description:nth-child(3) {
+    text-align: center;
+}
 
 #shopping .card-container {
     width: 100%;
@@ -448,34 +528,39 @@ header .navigation .hamburger-icon {
 }
 
 #contact-us .email-container #email-form {
-    max-width: 600px; 
+    max-width: 600px;
     margin: 20px auto;
-    padding: 20px; 
-    border: 2px solid #ccc; 
-    border-radius: 5px; 
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact-us .email-container #email-form label {
-    display: block;  
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 1em;
 }
 
-#contact-us .email-container #email-form input[type="text"], #contact-us .email-container #email-form input[type="email"] {
+#contact-us .email-container #email-form input[type="text"],
+#contact-us .email-container #email-form input[type="email"] {
     font-family: 'Raleway';
     outline: none;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 2px solid #ccc;
-    border-radius: 3px; 
-    box-sizing: border-box; 
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
-#contact-us .email-container #email-form input:focus, #contact-us .email-container #email-form textarea:focus {border: 2px solid orange;}
+#contact-us .email-container #email-form input:focus,
+#contact-us .email-container #email-form textarea:focus {
+    border: 2px solid orange;
+}
+
 #contact-us .email-container #email-form textarea {
     outline: none;
     width: 100%;
@@ -483,8 +568,8 @@ header .navigation .hamburger-icon {
     padding: 10px;
     margin-bottom: 15px;
     border: 2px solid #ccc;
-    border-radius: 3px; 
-    box-sizing: border-box; 
+    border-radius: 3px;
+    box-sizing: border-box;
     font-family: 'Raleway';
 }
 
@@ -528,9 +613,18 @@ footer .media-social-container {
     gap: 5px;
 }
 
-footer .fa-facebook {background-color: #3B5998;}
-footer .fa-whatsapp {background-color: #00c92b;}
-footer .fa-twitter {background-color: #0cabdb}
+footer .fa-facebook {
+    background-color: #3B5998;
+}
+
+footer .fa-whatsapp {
+    background-color: #00c92b;
+}
+
+footer .fa-twitter {
+    background-color: #0cabdb
+}
+
 footer .fa-instagram {
     background-image: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
 }
@@ -566,32 +660,24 @@ footer .fa:hover {
 }
 
 @keyframes fall {
-    0% {
-        top: -10px;
-    }
-
-    100% {
-        top: 100%;
-    }
+    0% {top: -10px;}
+    100% {top: 100%;}
 }
 
 @keyframes sway {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(70px);
-    }
+    0% {transform: translateX(0);}
+    100% {transform: translateX(70px);}
 }
 
 @keyframes twinkle {
-    0% {
-        opacity: 0.8;
-    }
+    0% {opacity: 0.8;}
+    100% {opacity: 0.3;}
+}
 
-    100% {
-        opacity: 0.3;
+@keyframes popup-scale {
+    to {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
     }
 }
 

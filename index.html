@@ -18,6 +18,14 @@
 </head>
 
 <body>
+    <div id="ad-popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="document.querySelector('#ad-popup').style.display = 'none';">&times;</button>
+            <img src="src/ad.jpg">
+            <div class="square"></div>
+        </div>
+    </div>
+
     <header>
         <div class="navigation">
             <div class="logo" onclick="document.documentElement.scrollTop = 0;">
@@ -201,35 +209,47 @@
 
     <section id="shopping">
         <div class="title">Beli Produk</div>
-        <div class="description">Temukan sensasi khas warisan nusantara dalam setiap tetes brem pilihan kami. Kami menghadirkan berbagai varian brem yang diracik dari fermentasi alami, dengan cita rasa manis, lembut, dan menyegarkan. Kini, tak perlu jauh-jauh — cukup klik dari rumah, dan nikmati brem favoritmu langsung dari e-commerce kami. <br>
+        <div class="description">Temukan sensasi khas warisan nusantara dalam setiap tetes brem pilihan kami. Kami
+            menghadirkan berbagai varian brem yang diracik dari fermentasi alami, dengan cita rasa manis, lembut, dan
+            menyegarkan. Kini, tak perlu jauh-jauh — cukup klik dari rumah, dan nikmati brem favoritmu langsung dari
+            e-commerce kami. <br>
         </div>
         <div class="description">🛒 Belanja sekarang, rasakan kenikmatan tradisi yang tak lekang oleh waktu!</div>
         <div class="card-container">
             <div class="card">
                 <img src="src/product-img/2.jpg">
                 <div class="card-title">Brem Original</div>
-                <div class="card-desc">Ingin rasakan brem original tanpa campuran perisa apapun? Mungkin ini jawabannya! Dibuat dari fermentasi ketan pilihan  menghasilkan rasa asli yang lembut, manis, dan menyegarkan. Setiap gigitannya menghadirkan cita rasa tradisional yang otentik—segar, ringan, dan khas.</div>
-                <div class="price"><i class="fa fa-money"></i>  Rp. 15.000,00</div>
+                <div class="card-desc">Ingin rasakan brem original tanpa campuran perisa apapun? Mungkin ini jawabannya!
+                    Dibuat dari fermentasi ketan pilihan menghasilkan rasa asli yang lembut, manis, dan menyegarkan.
+                    Setiap gigitannya menghadirkan cita rasa tradisional yang otentik—segar, ringan, dan khas.</div>
+                <div class="price"><i class="fa fa-money"></i> Rp. 15.000,00</div>
                 <center>
-                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk
+                    </div>
                 </center>
             </div>
             <div class="card">
                 <img src="src/product-img/1.jpg">
                 <div class="card-title">Brem Ketan Hitam</div>
-                <div class="card-desc" style="padding-bottom: 30px">Apa jadinya bila brem dibuat dengan menggunakan beras ketan hitam? Mari rasakan citarasa baru dari brem yang dibuat dari bahan dasar sari-sari ketan hitam. Anda akan merasakan citarasa yang unik namun familiar.</div>
-                <div class="price"><i class="fa fa-money"></i>  Rp. 20.000,00</div>
+                <div class="card-desc" style="padding-bottom: 30px">Apa jadinya bila brem dibuat dengan menggunakan
+                    beras ketan hitam? Mari rasakan citarasa baru dari brem yang dibuat dari bahan dasar sari-sari ketan
+                    hitam. Anda akan merasakan citarasa yang unik namun familiar.</div>
+                <div class="price"><i class="fa fa-money"></i> Rp. 20.000,00</div>
                 <center>
-                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk
+                    </div>
                 </center>
             </div>
             <div class="card">
                 <img src="src/product-img/3.jpg" style="border: 1px solid black;">
                 <div class="card-title">Brem Rasa Coklat</div>
-                <div class="card-desc">Anda sangat mencintai coklat dan ingin merasakan keunikan varian rasa lainnya dari produk kami? Brem dengan citarasa coklat ini mungkin bisa menjadi jawaban Anda! Dibuat dengan coklat pilihan yang tentunya memiliki rasa manis khas serta campuran sari-sari beras ketan.</div>
-                <div class="price"><i class="fa fa-money"></i>  Rp. 17.000,00</div>
+                <div class="card-desc">Anda sangat mencintai coklat dan ingin merasakan keunikan varian rasa lainnya
+                    dari produk kami? Brem dengan citarasa coklat ini mungkin bisa menjadi jawaban Anda! Dibuat dengan
+                    coklat pilihan yang tentunya memiliki rasa manis khas serta campuran sari-sari beras ketan.</div>
+                <div class="price"><i class="fa fa-money"></i> Rp. 17.000,00</div>
                 <center>
-                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk
+                    </div>
                 </center>
             </div>
         </div>
@@ -237,28 +257,36 @@
             <div class="card">
                 <img src="src/product-img/4.jpg">
                 <div class="card-title">Brem Bulat</div>
-                <div class="card-desc" style="padding-bottom: 70px;">Brem original berbentuk bulat dengan tekstur yang lebih tebal dan kasar dari biasanya. Memberikan rasa yang menarik di mulut dan tidak terlupakan.</div>
-                <div class="price"><i class="fa fa-money"></i>  Rp. 15.000,00</div>
+                <div class="card-desc" style="padding-bottom: 70px;">Brem original berbentuk bulat dengan tekstur yang
+                    lebih tebal dan kasar dari biasanya. Memberikan rasa yang menarik di mulut dan tidak terlupakan.
+                </div>
+                <div class="price"><i class="fa fa-money"></i> Rp. 15.000,00</div>
                 <center>
-                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk
+                    </div>
                 </center>
             </div>
             <div class="card">
                 <img src="src/product-img/5.jpg">
                 <div class="card-title">Brem Rasa Buah</div>
-                <div class="card-desc" style="padding-bottom: 70px;">Brem dengan beraneka rasa-rasa buah. Terdapat 5 jenis varian rasa buah dalam 1 paket meliputi rasa anggur, lemon, stroberi, melon dan durian.</div>
-                <div class="price"><i class="fa fa-money"></i>  Rp. 17.000,00</div>
+                <div class="card-desc" style="padding-bottom: 70px;">Brem dengan beraneka rasa-rasa buah. Terdapat 5
+                    jenis varian rasa buah dalam 1 paket meliputi rasa anggur, lemon, stroberi, melon dan durian.</div>
+                <div class="price"><i class="fa fa-money"></i> Rp. 17.000,00</div>
                 <center>
-                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk
+                    </div>
                 </center>
             </div>
             <div class="card">
                 <img src="src/product-img/6.jpg" style="border: 1px solid black;">
                 <div class="card-title">Camilan Brem Mini</div>
-                <div class="card-desc" style="padding-bottom: 48px;">Buat brem sebagai camilan dengan ukuran kecil yang bisa disantap dimana saja! Dibuat dengan berabgai campuran varian rasa sehingga tidak perlu bosan dalam menikmatinya!</div>
-                <div class="price"><i class="fa fa-money"></i>  Rp. 17.000,00</div>
+                <div class="card-desc" style="padding-bottom: 48px;">Buat brem sebagai camilan dengan ukuran kecil yang
+                    bisa disantap dimana saja! Dibuat dengan berabgai campuran varian rasa sehingga tidak perlu bosan
+                    dalam menikmatinya!</div>
+                <div class="price"><i class="fa fa-money"></i> Rp. 17.000,00</div>
                 <center>
-                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk
+                    </div>
                 </center>
             </div>
         </div>
