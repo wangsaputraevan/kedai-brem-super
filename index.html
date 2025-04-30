@@ -140,7 +140,7 @@
                     <p>Nikmati citarasa unik dari makanan tradisional khas Madiun.</p>
                     <div class="btn-container">
                         <a href="#introduction">Selengkapnya</a>
-                        <a class="buy-btn" href="#">Beli Sekarang!</a>
+                        <a class="buy-btn" href="#shopping">Beli Sekarang!</a>
                     </div>
                 </div>
                 <div class="hero-img-wrapper">
@@ -180,7 +180,9 @@
     <section id="product-preview">
         <div class="title">Gambar Produk</div>
         <div class="scroll-wrapper">
-            <div class="scroll-btn left" onclick="document.querySelector('.container').scrollBy({left: -50, behavior: 'smooth'}); return false;">&#10094;</div>
+            <div class="scroll-btn left"
+                onclick="document.querySelector('.container').scrollBy({left: -50, behavior: 'smooth'}); return false;">
+                &#10094;</div>
 
             <div class="container">
                 <img src="src/product-preview/1.jpg">
@@ -191,31 +193,99 @@
                 <img src="src/product-preview/6.jpg">
             </div>
 
-            <div class="scroll-btn right" onclick="document.querySelector('.container').scrollBy({left: 50, behavior: 'smooth'}); return false;">&#10095;</div>
+            <div class="scroll-btn right"
+                onclick="document.querySelector('.container').scrollBy({left: 50, behavior: 'smooth'}); return false;">
+                &#10095;</div>
         </div>
     </section>
 
     <section id="shopping">
-        <div><strong>besok ajalah yg section ini, males</strong></div>
+        <div class="title">Beli Produk</div>
+        <div class="description">Temukan sensasi khas warisan nusantara dalam setiap tetes brem pilihan kami. Kami menghadirkan berbagai varian brem yang diracik dari fermentasi alami, dengan cita rasa manis, lembut, dan menyegarkan. Kini, tak perlu jauh-jauh — cukup klik dari rumah, dan nikmati brem favoritmu langsung dari e-commerce kami. <br>
+        </div>
+        <div class="description">🛒 Belanja sekarang, rasakan kenikmatan tradisi yang tak lekang oleh waktu!</div>
+        <div class="card-container">
+            <div class="card">
+                <img src="src/product-img/2.jpg">
+                <div class="card-title">Brem Original</div>
+                <div class="card-desc">Ingin rasakan brem original tanpa campuran perisa apapun? Mungkin ini jawabannya! Dibuat dari fermentasi ketan pilihan  menghasilkan rasa asli yang lembut, manis, dan menyegarkan. Setiap gigitannya menghadirkan cita rasa tradisional yang otentik—segar, ringan, dan khas.</div>
+                <div class="price"><i class="fa fa-money"></i>  Rp. 15.000,00</div>
+                <center>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                </center>
+            </div>
+            <div class="card">
+                <img src="src/product-img/1.jpg">
+                <div class="card-title">Brem Ketan Hitam</div>
+                <div class="card-desc" style="padding-bottom: 30px">Apa jadinya bila brem dibuat dengan menggunakan beras ketan hitam? Mari rasakan citarasa baru dari brem yang dibuat dari bahan dasar sari-sari ketan hitam. Anda akan merasakan citarasa yang unik namun familiar.</div>
+                <div class="price"><i class="fa fa-money"></i>  Rp. 20.000,00</div>
+                <center>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                </center>
+            </div>
+            <div class="card">
+                <img src="src/product-img/3.jpg" style="border: 1px solid black;">
+                <div class="card-title">Brem Rasa Coklat</div>
+                <div class="card-desc">Anda sangat mencintai coklat dan ingin merasakan keunikan varian rasa lainnya dari produk kami? Brem dengan citarasa coklat ini mungkin bisa menjadi jawaban Anda! Dibuat dengan coklat pilihan yang tentunya memiliki rasa manis khas serta campuran sari-sari beras ketan.</div>
+                <div class="price"><i class="fa fa-money"></i>  Rp. 17.000,00</div>
+                <center>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                </center>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="src/product-img/4.jpg">
+                <div class="card-title">Brem Bulat</div>
+                <div class="card-desc" style="padding-bottom: 70px;">Brem original berbentuk bulat dengan tekstur yang lebih tebal dan kasar dari biasanya. Memberikan rasa yang menarik di mulut dan tidak terlupakan.</div>
+                <div class="price"><i class="fa fa-money"></i>  Rp. 15.000,00</div>
+                <center>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                </center>
+            </div>
+            <div class="card">
+                <img src="src/product-img/5.jpg">
+                <div class="card-title">Brem Rasa Buah</div>
+                <div class="card-desc" style="padding-bottom: 70px;">Brem dengan beraneka rasa-rasa buah. Terdapat 5 jenis varian rasa buah dalam 1 paket meliputi rasa anggur, lemon, stroberi, melon dan durian.</div>
+                <div class="price"><i class="fa fa-money"></i>  Rp. 17.000,00</div>
+                <center>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                </center>
+            </div>
+            <div class="card">
+                <img src="src/product-img/6.jpg" style="border: 1px solid black;">
+                <div class="card-title">Camilan Brem Mini</div>
+                <div class="card-desc" style="padding-bottom: 48px;">Buat brem sebagai camilan dengan ukuran kecil yang bisa disantap dimana saja! Dibuat dengan berabgai campuran varian rasa sehingga tidak perlu bosan dalam menikmatinya!</div>
+                <div class="price"><i class="fa fa-money"></i>  Rp. 17.000,00</div>
+                <center>
+                    <div class="buy-btn" onclick="window.confirm('Anda yakin ingin membeli produk ini?');">Beli Produk</div>
+                </center>
+            </div>
+        </div>
     </section>
 
     <section id="contact-us">
         <div class="title">Hubungi Kami</div>
-        <div class="description">Punya pertanyaan seputar produk kami, ingin memesan dalam jumlah besar, memberikan saran, atau sekadar ingin tahu lebih lanjut tentang brem khas Madiun? Jangan ragu untuk menghubungi kami! Tim Kedai Brem Super selalu siap membantu Anda dengan ramah dan cepat. Baik itu informasi mengenai varian rasa, cara pemesanan, pengiriman, hingga kerja sama atau kolaborasi, kami senang bisa mendengar langsung dari Anda. Silakan gunakan formulir surel, media sosial, atau nomor yang tersedia! Kami akan berusaha merespons secepat mungkin demi kenyamanan dan kepuasan Anda.</div>
+        <div class="description">Punya pertanyaan seputar produk kami, ingin memesan dalam jumlah besar, memberikan
+            saran, atau sekadar ingin tahu lebih lanjut tentang brem khas Madiun? Jangan ragu untuk menghubungi kami!
+            Tim Kedai Brem Super selalu siap membantu Anda dengan ramah dan cepat. Baik itu informasi mengenai varian
+            rasa, cara pemesanan, pengiriman, hingga kerja sama atau kolaborasi, kami senang bisa mendengar langsung
+            dari Anda. Silakan gunakan formulir surel, media sosial, atau nomor yang tersedia! Kami akan berusaha
+            merespons secepat mungkin demi kenyamanan dan kepuasan Anda.</div>
         <div class="email-container">
             <form id="email-form">
                 <label for="name">Nama Lengkap:</label>
                 <input type="text" id="name" required>
-        
+
                 <label for="subject">Alamat Surel (Email):</label>
                 <input type="email" id="email" required>
 
                 <label for="subject">Subjek (Judul):</label>
                 <input type="text" id="subject" required>
-        
+
                 <label for="message">Pesan atau pertanyaan:</label>
                 <textarea id="message" required></textarea>
-        
+
                 <button type="button" class="send-btn">Kirim Surel</button>
             </form>
         </div>

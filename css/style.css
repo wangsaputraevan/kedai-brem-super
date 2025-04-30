@@ -346,8 +346,86 @@ header .navigation .hamburger-icon {
     
 /* END OF PRODUCT PREVIEW SECTION */
 
-/* */
-/* */
+/* SHOPPING SECTION */
+
+#shopping {padding: 30px 40px;}
+#shopping .title {text-align: center;}
+#shopping .description {
+    padding: 20px 150px;
+    padding-bottom: 0;
+    line-height: 1.4;
+    color: black;
+    text-align: justify;
+}
+
+#shopping .description:nth-child(3) {text-align: center;}
+
+#shopping .card-container {
+    width: 100%;
+    height: 520px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#shopping .card-container .card {
+    width: 350px;
+    height: 530px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#shopping .card-container .card img {
+    width: 100%;
+    scale: 90%;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+#shopping .card-container .card .card-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#shopping .card-container .card .card-desc {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.3;
+    padding: 10px 20px;
+}
+
+#shopping .card-container .card .price {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Raleway Bold';
+    font-weight: bolder;
+    line-height: 1.3;
+    padding: 10px 20px;
+}
+
+#shopping .card-container .card .buy-btn {
+    background-color: orange;
+    width: 80%;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 15px;
+    border: 1.5px solid black;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+#shopping .card-container .card .buy-btn:hover {
+    cursor: pointer;
+    border: 2px solid orange;
+    color: orange;
+    background-color: white;
+    scale: 90%;
+}
+
+/* END OF SHOPPING SECTION */
 
 /* CONTACT US SECTION */
 
